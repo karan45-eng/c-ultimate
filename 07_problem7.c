@@ -1,23 +1,14 @@
 #include <stdio.h>
 
+void change_to_ten_times(int);
+
+void change_to_ten_times(int a){
+    a = a * 10;
+}
 int main(){
-    int n = 3;
-    for (int i = 0; i < n; i++)
-    {
-        // This loop runs from 0 to 2
-        // if i = 0 ---> print 1 star 
-        // if i = 1 ---> print 3 stars 
-        // if i = 2 ---> print 5 stars 
-        // no_of_stars = (2*i+1)
-
-        // This for loop prints (2*i+1) stars 
-        for(int j=0; j<2*i+1;j++){
-            printf("*");
-        }
-
-        // This printf prints a new line 
-        printf("\n");
-    }
-    
+    int x = 30;
+    printf("the value of x is %d\n", x);
+    change_to_ten_times(x);
+    printf("the value of x is %d\n", x);
     return 0;
 }

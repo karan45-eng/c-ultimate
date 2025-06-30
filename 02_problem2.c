@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-float c2f(float c);
-
-float c2f(float c){
-    return ((9*c)/5) +  32;
+int returning_5(int* ptr){
+    printf("the value of ptr is %d", ptr);
+    printf("the value at ptr is %d", *ptr);
+    return 5;
 }
-
 int main(){
-    float c = 45;
-    printf("celsius to fahrenhite for %f is %f", c, c2f(c));
+    int i = 2;
+    int* ptr = &i;
+    printf("the address of i is %u\n", &i);
+    returning_5(ptr);
     return 0;
 }
