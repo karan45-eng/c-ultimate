@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-float force(float);
+void change_to_ten_times(int*);
 
-float force(float mass){
-    return mass*9.8;
+void change_to_ten_times(int* a){
+    *a = *a * 10;
 }
-
-
 int main(){
-    float m = 6;
-    printf("the value of force is %f\n", force(m));
+    int x = 30;
+    printf("the value of x is %d\n", x);
+    change_to_ten_times(&x);
+    printf("the value of x is %d\n", x);
     return 0;
 }

@@ -1,19 +1,15 @@
 #include <stdio.h>
 
-// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
-// fibonacci(n) = fibonacci(n-1) + fibonacci(n-2);
+int sum(int*, int*);
 
-int fibonacci(int);
-
-int fibonacci(int n){
-    if(n == 1 || n==2){
-        return n-1;
-    }
-    return fibonacci(n-1) + fibonacci(n-2);
+int sum(int* a, int* b ){
+    *a = 8;
+    return (*a + *b);
 }
- 
+
 int main(){
-    int n = 7;
-    printf("The value of fibonacci series at %d is %d", n, fibonacci(n));
+    int x = 3, y=7;
+    printf("the sum of x and y is %d\n", sum(&x, &y));
+    printf("the value of x is %d\n", x);
     return 0;
 }
