@@ -56,35 +56,3 @@ Created with ❤️ by karan45-eng
 
 📜 License
 This project is open-source and free to use.
-
-yaml
-Copy
-Edit
-
----
-
-## 🔧 Add It To Your GitHub Repo
-
-### Option 1: Web Se
-
-1. GitHub repo open karo
-2. `Add file` > **Create new file**
-3. File name likho: `README.md`
-4. Yeh content paste karo
-5. Commit changes
-
-### Option 2: Terminal Se
-
-1. Create file:
-
-```bash
-notepad README.md
-Paste the content, save and close
-
-Then:
-
-Copy
-Edit
-git add README.md
-git commit -m "Added README file"
-git push
